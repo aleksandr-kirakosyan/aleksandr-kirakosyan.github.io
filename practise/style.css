@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    cursor: none;
+}
+html {
+    background-color: #222831;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222831;
+}
+header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222831;
+    color: white;
+    background-image: url('doodles.png');
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+.brand-title:hover{
+    color: #00ADB5;
+    transform: rotateY(360deg); 
+    transform-style:preserve-3d;
+    transition: 2s;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #393E46;
+    transition: 1s;
+    border-bottom:1px solid #1DA1F2;
+    cursor: pointer;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.toggle-button .bar:hover {
+    background-color:#1DA1F2;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 30%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/* Main */
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: left;
+    padding: 20px;
+    margin-top: 100px;
+}
+  
+.grid-container > div {
+    text-align: center;
+    font-size: 30px;
+}
+  
+.item1 {
+    padding: 10px;
+    flex: 50%;
+}
+.item2 {
+    padding: 10px;
+    flex: 50%;
+}
+
+#hirebtn{
+    width: 136px;
+    height: 47px;   
+    padding: 10px;
+    background-color: #00ADB5;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    margin: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+#cvbtn{
+    padding: 10px;
+    background-color: rgba(57, 62, 70, 0.75);;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    width: 223px;
+    height: 47px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+#cvbtn a{
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.item1 h1{
+    color: #00ADB5;
+    font-family: 'Times New Roman', Times, serif;
+}
+.item1 h1 span{
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+}
+.image1 {
+    max-width: 300px;
+    max-height: 300px;
+    background-image: url('doodlesround.png');
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 768px){
+    .grid-container{
+        justify-content: space-between;
+        margin-top: 0px;
+    }
+    .item1{
+        flex: 80%;
+    }
+    .item2{
+        flex: 80%;
+    }
+}
+
+/* About me */
+.about-flex{
+    display: flex;
+    gap: 300px;
+    justify-content: center;
+    margin-top: 100px;
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 60px;
+}
+
+.about1 h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 60px;
+}
+.about1 h1 span{
+    font-family: 'Times New Roman', Times, serif;
+    color: #00ADB5;
+}
+.about1 p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: white;
+}
+.about2 img{
+    max-width: 300px;
+}
+
+.about1{
+    flex: 50%;
+}
+.about2{
+    flex: 50%;
+    padding-top: 100px;
+    background-image: url('deadlines.png');
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px){
+    .about-flex{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-between;
+        margin-top: 0px;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 10px;
+    }
+    .about1{
+        flex: 80%;
+    }
+    .about2{
+        flex: 80%;
+    }
+}
+
+
+/* CURSOR */
+.cursor {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 2px solid white; */
+    /* background-color: rgba(255, 255, 255, 0.356); */
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  .cursor::after,
+  .cursor::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.37);
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+  }
+  .cursor::before {
+    background-color: rgba(255, 255, 255, 0.37);
+  }
+  .cursor.click::before {
+    animation: click 1s ease forwards;
+    background-color: rgba(255, 255, 255, 0.37);
+  }
+  @keyframes click {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(7);
+    }
+  }
+
+/* projects */
+
+.proj-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: left;
+    padding: 20px;
+    margin-top: 100px;
+    background-image: url('doodles.png');
+}
+  
+.proj-container > div {
+    text-align: center;
+    font-size: 30px;
+}
+  
+.proj1 {
+    padding: 10px;
+    flex: 50%;
+}
+.proj2 {
+    padding: 10px;
+    flex: 50%;
+}
+.proj1 h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 60px;
+}
+.proj1 h1 span{
+    font-family: 'Times New Roman', Times, serif;
+    color: #00ADB5;
+}
+.proj1 #all{
+    padding: 10px;
+    width: 60px;
+    border-radius: 45px;
+    border: none;
+    background: #00acb593;;
+    border-radius: 24px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.proj1 #portfolios{
+    padding: 10px;
+    border-radius: 45px;
+    border: none;
+    background: rgba(73, 78, 94, 0.664);
+    border-radius: 24px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.proj1 #wp{
+    padding: 10px;
+    border-radius: 45px;
+    border: none;
+    background: rgba(73, 78, 94, 0.664);
+    border-radius: 24px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.proj1 #games{
+    padding: 10px;
+    border-radius: 45px;
+    border: none;
+    background: rgba(73, 78, 94, 0.664);
+    border-radius: 24px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.proj-container img{
+    padding: 20px;
+}
+@media only screen and (max-width: 768px){
+    .proj-container {
+        justify-content: center;
+        text-align: center;
+    }
+    #all{
+        margin: 10px;
+    }
+    #wp{
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+    .proj-container img{
+        padding: 80px;
+    }
+}
+
+/* CONTACT */
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: left;
+    padding: 20px;
+    margin-top: 100px;
+    background-image: url('keyboard.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.contact-container > .cont1 {
+    text-align: left;
+    font-size: 30px;
+}
+.contact-container > .cont2 {
+    text-align: center;
+    font-size: 30px;
+}
+.cont1 {
+    padding-left: 100px;
+    flex: 50%;
+    background-image: url('lightbulb.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.cont2 {
+    padding-top: 50px;
+    flex: 50%;
+    background-image: url('mail.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    
+}
+.cont1 h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 60px;
+}
+.cont1 h1 span{
+    font-family: 'Times New Roman', Times, serif;
+    color: #00ADB5;
+}
+
+@media only screen and (max-width: 768px){
+    .contact-container{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-between;
+        margin-top: 0px;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 10px;
+    }
+    .contact-container > div {
+        text-align: center;
+        font-size: 30px;
+    }
+    .cont1{
+        flex: 80%;
+        padding: 5px;
+    }
+    .cont2{
+        flex: 80%;
+        flex-wrap: wrap;
+    }
+}
+#fname{
+    padding: 15px;
+    border: none;
+    background: rgba(73, 78, 94, 0.664);
+    border-radius: 24px;
+}
+#email{
+    padding: 15px;
+    border: none;
+    background: rgba(73, 78, 94, 0.664);
+    border-radius: 24px;
+}
+#p{
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255, 255, 255, 0.541);
+    font-size: 15px;
+}
+textarea {
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    width: 400px;
+    height: 217px;
+    border: none;
+    background: rgba(73, 78, 94, 0.664);
+    border-radius: 24px;
+  }
+  .cont1 {
+    background-image: url('doodlesround.png');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+ }
+footer ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+footer  li {
+    float: left;
+  }
+footer  li i{
+    float: left;
+}
+footer  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+#git{
+    width: 48px;
+height: 48px;
+
+/* Color 2 */
+
+background: #393E46;
+border-radius: 50px;
+}
