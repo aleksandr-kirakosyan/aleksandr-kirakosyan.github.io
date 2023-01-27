@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXCHANGE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d809143edb.js" crossorigin="anonymous"></script>
+</head>
+<div>
+<center>
+    <div class="grid-container">
+        <div class="grid-logo">
+            <img id="logo" src="logocb.png">
+        </div>
+        <div class="grid-item">
+            <p>
+                Armenian Dram AMD Exchange Rates<br> 
+                by Central Bank of Armenia
+            </p>
+        </div>
+    </div>
+</center>
+<div class="table-div">
+    <table id="table">
+        <tr>
+            <th colspan="2" id="demo"></th>
+        </tr>
+        <tr>
+            <th>USD</th>
+            <th id="usdvalue"></th>
+        </tr>
+        <tr>
+            <th>GBP</th>
+            <th id="gbpvalue"></th>
+        </tr>
+        <tr>
+            <th>EUR</th>
+            <th id="eurvalue"></th>
+        </tr>
+        <tr>
+            <th>GEL</th>
+            <th id="gelvalue"></th>
+        </tr>
+        <tr>
+            <th class="rub">RUB</th>
+            <th id="rubvalue"></th>
+        </tr>
+    </table>
+</div>
+<center>
+    <button id="at" onclick="show()">
+        <h4>Advanced table</h4>
+    </button>
+</center>
+<div id="adtd">
+    <table id="table2">
+        <tr>
+            <th>ISO(code)</th>
+            <th>Փոխարժեքը ՀՀ դրամով</th>
+        </tr>
+    </table> 
+    <table id="table3" style="margin-top: 50px;">
+        <tr>
+            <th>ISO(code)</th>
+            <th>Փոխարժեքը ՀՀ դրամով</th>
+        </tr>
+    </table> 
+    <table id="table4" style="margin-top: 50px;">
+        <tr>
+            <th>ISO(code)</th>
+            <th>Փոխարժեքը ՀՀ դրամով</th>
+        </tr>
+    </table> 
+</div>
+<center>
+    <button id="apifordev" onclick="showlinks()">
+        API for Developers 
+    </button>
+</center>
+<div id="fordev">
+    <h5>Փոխարժեք<br>JSON<br><a href="https://cb.am/latest.json.php" target="_blank">https://cb.am/latest.json.php</a><br>
+    <a href="https://cb.am/latest.json.php?currency=USD" target="_blank">https://cb.am/latest.json.php?currency=USD [USD, GBP...]</a>
+    </h5>
+    <h5>JSONP<br><a href="https://cb.am/latest.json.php?callback=testFunction" target="_blank">https://cb.am/latest.json.php?callback=testFunction [&currency=USD]</a></h5>
+</div>
+<center>
+    <p style="font-size: 10px;">Փոխարժեքը վերցվում է ՀՀ Կենտրոնական Բանկի<br>
+        պաշտոնական կայքից - <a href="https://www.cba.am" target="_blank" style="color: rgb(85, 163, 177);">https://www.cba.am</a></p>
+</center>
+<center>
+    <a href="mailto:cba@gmail.com" >
+        <i class="fa-regular fa-envelope" style="color: rgb(152, 198, 206);font-size: 50px;margin-top: 20px;"></i>
+    </a>
+</center>
+<!-- SCRIPT -->
+<script src="app.js"></script>
+</body>
+</html>

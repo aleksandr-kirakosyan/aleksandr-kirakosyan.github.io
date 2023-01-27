@@ -1,0 +1,121 @@
+table{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(224, 233, 241);
+    border: none;
+}
+#table{
+    border-radius: 30px;
+}
+
+td, th {
+    border:1px solid rgb(179, 182, 182);
+    padding: 20px;
+  }
+
+td{
+    text-align: center;
+    width: 150px;
+}
+
+th{
+    width: 100px;
+}
+
+#demo{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.rub{
+    border-bottom-left-radius: 30px;
+}
+#rubvalue{
+    border-bottom-right-radius: 30px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 30%;
+    height: 40px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+.grid-item{
+    padding-left: 10px;
+    text-align: left;
+    height: 40px;
+}
+.grid-logo{
+    border-right: 1px solid black; 
+    padding-right: 10px;
+}
+@media  (max-width:768px) {
+    .grid-item{
+        display: none;
+    }
+}
+#logo{
+    width: 89px;
+    height: 39,23px;
+}
+
+#at{
+    margin-top: 30px;
+    color: rgb(85, 163, 177);
+    background-color: rgb(218, 243, 248);
+    border: 1px solid rgb(85, 163, 177);
+    border-radius: 24px;
+    width: 200px;
+    cursor: pointer;
+}
+#at:hover{
+    box-shadow: 3px 5px rgba(168, 168, 168, 0.788);
+    color: white;
+    background-color: rgb(85, 163, 177);
+    border: 1px solid rgb(192, 215, 219);
+}
+
+#table2{
+    margin-top: 50px;
+    margin-bottom: 10px;
+ 
+}
+#table3{
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+}
+#table4{
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+}
+
+#adtd{
+    display: none;
+}
+
+#apifordev{
+    border: none;
+    color: rgb(85, 163, 177);
+    background-color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#fordev a{
+    color: rgb(85, 163, 177);
+}
+#fordev{
+    display: none;
+}
+
+@media  (max-width:768px) {
+    #adtd{
+        flex-direction: column;
+    }
+}
